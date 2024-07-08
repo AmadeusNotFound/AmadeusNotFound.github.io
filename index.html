@@ -1,0 +1,16 @@
+---
+layout: page
+title: Hello World !
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% include post-bloc.html %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Flux RSS</a></p>
+
+</div>
